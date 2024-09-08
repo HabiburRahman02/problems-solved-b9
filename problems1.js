@@ -1,8 +1,8 @@
 
 function calculateMoney(ticketQuantity) {
 
-    if(Math.sign(ticketQuantity) === -1){
-        return 'Please provide a positive number'
+    if (ticketQuantity < 0 || typeof ticketQuantity !== 'number') {
+        return 'Invalid number'
     }
 
     const totalBuy = ticketQuantity * 120;
@@ -15,5 +15,5 @@ function calculateMoney(ticketQuantity) {
     return revenue
 }
 
-const result = calculateMoney(-10);
+const result = calculateMoney(1055);
 console.log(result);
