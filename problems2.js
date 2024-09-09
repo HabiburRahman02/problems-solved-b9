@@ -14,6 +14,5 @@ function checkName(name) {
     }
 }
 
-
 const result = checkName(['salmans']);
 console.log(result)
